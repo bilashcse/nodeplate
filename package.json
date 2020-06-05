@@ -1,0 +1,18 @@
+{
+  "name": "nodeplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "nodeplate": "./bin/main.js"
+  },
+  "keywords": [],
+  "author": "bilash <bilashcse@gmail.com> (https://github.com/bilashcse)",
+  "license": "MIS",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4"
+  }
+}
