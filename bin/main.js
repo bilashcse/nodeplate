@@ -1,16 +1,18 @@
 #! /usr/bin/env node
 
 const program = require("commander");
-const { exec } = require("child_process");
 
 const pkg = require("../package.json");
-const { createProject } = require("../src/createProject");
+const createProject = require("../module/createProject");
 
 program
   .version(pkg.version)
-  .usage("[option][name]")
+  .usage("[option] [name]")
   .option("-i, --init", "Initialize new project")
   .action(async function () {
+    if (!program.init) {
+      program.help();
+    }
     await createProject();
   });
 

@@ -1,6 +1,6 @@
 {
   "name": "nodeplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "commander": "^5.1.0",
     "fs-extra": "^9.0.1",
-    "inquirer": "^7.1.0",
-    "ora": "^4.0.4"
+    "inquirer": "^7.3.3",
+    "ora": "^4.1.1"
   }
 }
