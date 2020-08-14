@@ -25,10 +25,7 @@ const initProject = async (answers) => {
 
     await createStarterFiles(folderPath);
     Spinner.succeed("Initial setup files created successfully.");
-
-    // await createMongooseIntegration(folderPath);
-    // await createExampleEnvVariables(folderPath);
-
+      
     Spinner.stop();
   } catch (err) {
     Spinner.fail(err.message);
