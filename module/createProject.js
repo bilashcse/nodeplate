@@ -2,8 +2,8 @@ const inquirer = require("inquirer");
 const Ora = require("ora");
 const Spinner = new Ora();
 
-const questions = require('../questions/question');
-const createProjectFolder = require("../services/project");
+const questions = require("../questions/question");
+const { createFolder, createPackageJson } = require("../services/project");
 const createStarterFiles = require("../services/initFiles");
 
 const createProject = async () => {
@@ -14,11 +14,14 @@ const createProject = async () => {
 async function initProject(answers) {
   Spinner.start();
   try {
-    const folderPath = await createProjectFolder(answers["name"]);
+    const folderPath = await createFolder(answers["name"]);
     Spinner.succeed("New project folder created successfully.");
+      
+    await createPackageJson(folderPath);
+    Spinner.succeed("Initial package installed successfully");
 
     await createStarterFiles(folderPath);
-    Spinner.info("Initial setup files created successfully.");
+    Spinner.succeed("Initial setup files created successfully.");
 
     // await createEnvVariables(folderPath);
     // await createMongooseIntegration(folderPath);
