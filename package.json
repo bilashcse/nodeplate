@@ -6,6 +6,10 @@
   "bin": {
     "nodeplate": "./bin/main.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilashcse/nodeplate.git"
+  },
   "keywords": [],
   "author": "bilash <bilashcse@gmail.com> (https://github.com/bilashcse)",
   "license": "MIS",
