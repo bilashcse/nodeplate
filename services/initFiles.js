@@ -20,65 +20,61 @@ const createStarterFiles = async (dirPath) => {
 
 const creatDevFormatorDepencency = async (dirPath) => {
   await fs.ensureDirSync(dirPath);
-  await fs.copySync(`${templatesPath}/gitignore.txt`, `${dirPath}/.gitignore`);
-  await fs.copySync(`${templatesPath}/babelrc.txt`, `${dirPath}/.babelrc`);
+  await fs.copySync(`${templatesPath}/gitignore`, `${dirPath}/.gitignore`);
+  await fs.copySync(`${templatesPath}/babelrc`, `${dirPath}/.babelrc`);
   await fs.copySync(
-    `${templatesPath}/prettierrc.txt`,
+    `${templatesPath}/prettierrc.js`,
     `${dirPath}/.prettierrc.js`
   );
-  await fs.copySync(`${templatesPath}/eslintrc.txt`, `${dirPath}/.eslintrc.js`);
+  await fs.copySync(`${templatesPath}/eslintrc.js`, `${dirPath}/.eslintrc.js`);
 };
 
 const createServerFiles = async (dirPath) => {
-  await fs.copySync(`${templatesPath}/index.txt`, `${dirPath}/server/app.js`);
+  await fs.copySync(`${templatesPath}/app.js`, `${dirPath}/server/app.js`);
   await fs.copySync(
-    `${templatesPath}/configs.txt`,
+    `${templatesPath}/config.js`,
     `${dirPath}/server/configs/config.js`
   );
   await fs.copySync(
-    `${templatesPath}/celebrateHandler.txt`,
+    `${templatesPath}/celebrateHandler.js`,
     `${dirPath}/server/utils/celebrateErrorHandler.js`
   );
   await fs.copySync(
-    `${templatesPath}/date.txt`,
+    `${templatesPath}/date.js`,
     `${dirPath}/server/utils/date.js`
   );
   await fs.copySync(
-    `${templatesPath}/dynamicHtml.txt`,
-    `${dirPath}/server/utils/dynamicHtml.js`
-  );
-  await fs.copySync(
-    `${templatesPath}/sequelizeFilter.txt`,
+    `${templatesPath}/filter.js`,
     `${dirPath}/server/utils/filter.js`
   );
   await fs.copySync(
-    `${templatesPath}/convertTemplateString.txt`,
+    `${templatesPath}/convertTemplateString.js`,
     `${dirPath}/server/utils/convertTemplateString.js`
   );
   await fs.copySync(
-    `${templatesPath}/sequelizeTransaction.txt`,
+    `${templatesPath}/transaction.js`,
     `${dirPath}/server/utils/transaction.js`
   );
 
   await fs.copySync(
-    `${templatesPath}/controllerIndex.txt`,
+    `${templatesPath}/controllerIndex.js`,
     `${dirPath}/server/controllers/index.js`
   );
 
   await fs.copySync(
-    `${templatesPath}/controllerDefault.txt`,
+    `${templatesPath}/controllerDefault.js`,
     `${dirPath}/server/controllers/default.js`
   );
 
   await fs.copySync(
-    `${templatesPath}/modelIndex.txt`,
+    `${templatesPath}/modelIndex.js`,
     `${dirPath}/server/models/index.js`
   );
 };
 
 const setUpLogger = async (dirPath) => {
   await fs.copySync(
-    `${templatesPath}/log4js.txt`,
+    `${templatesPath}/log4js.js`,
     `${dirPath}/server/logger/index.js`
   );
 };
