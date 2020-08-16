@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-$ npm i -g nodeplate
+npm install @bilashcse/nodeplate@0.0.3 -g
 ```
 
 ### Available Options
