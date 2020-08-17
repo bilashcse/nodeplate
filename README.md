@@ -21,8 +21,8 @@ Options:
 
 - [x] Express Server SetUp
 - [x] MySQL, Sequelize SetUp
-- [x] EsLint
-- [x] Prettier
+- [x] EsLint SetUp
+- [x] Prettier SetUp
 - [ ] Dynamic Database generate
 - [ ] NPM Installation Validation
 - [ ] Dynamic Module generate
