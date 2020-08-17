@@ -1,7 +1,7 @@
 {
   "name": "nodeplate",
-  "version": "0.0.4",
-  "description": "",
+  "version": "0.0.5",
+  "description": "Node project structure generator",
   "main": "index.js",
   "bin": {
     "nodeplate": "./bin/main.js"
