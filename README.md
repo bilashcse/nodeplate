@@ -16,3 +16,14 @@ Options:
   -i, --init     Initialize new project
   -h, --help     display help for command
 ```
+
+### Todo
+
+- [x] Express Server SetUp
+- [x] MySQL, Sequelize SetUp
+- [x] EsLint
+- [x] Prettier
+- [ ] Dynamic Database generate
+- [ ] NPM Installation Validation
+- [ ] Dynamic Module generate
+- [ ] Dynamic Rest API Design
