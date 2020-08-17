@@ -1,5 +1,5 @@
 ## Nodeplate
-"nodeplate" is a simple cli app to create  NodeJs, ExpressJs, MySQL, Sequelize based project structure. 
+"nodeplate" is a simple cli app to generate  NodeJs, ExpressJs, MySQL, Sequelize based project structure. 
 
 ## Installation
 
