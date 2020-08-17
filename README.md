@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-$ npm i -g nodeplate
+npm install -g nodeplate
 ```
 
 ### Available Options
