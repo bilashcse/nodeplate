@@ -24,6 +24,5 @@ Options:
 - [x] EsLint SetUp
 - [x] Prettier SetUp
 - [ ] Dynamic Database generate
-- [ ] NPM Installation Validation
 - [ ] Dynamic Module generate
 - [ ] Dynamic Rest API Design
