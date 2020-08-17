@@ -1,6 +1,6 @@
 {
-  "name": "@bilashcse/nodeplate",
-  "version": "0.0.3",
+  "name": "nodeplate",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/bilashcse/nodeplate.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "keywords": [],
   "author": "bilash <bilashcse@gmail.com> (https://github.com/bilashcse)",
   "license": "MIS",
